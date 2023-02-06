@@ -153,7 +153,7 @@ async function handleDialogFlowAction(
 ) {
   switch (action) {
     case "Codigo.quickReply.action":
-      let replies=[];
+      let replies = [];
       for (let i = 1; i <= 5; i++) {
         replies.push({
           payload: "si_acepto",
