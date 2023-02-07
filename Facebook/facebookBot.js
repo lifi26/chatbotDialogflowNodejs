@@ -153,9 +153,9 @@ async function handleDialogFlowAction(
 ) {
   switch (action) {
     case "Code.DemasElementos.action":
-      sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
-      sendImageMessage(sender, "https://blog.telecom.pucp.edu.pe/wp-content/uploads/2016/09/cde-fotochopeado.jpg");
-      sendButtonMessage(sender, "Ejemplo de boton", [{
+      await sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
+      await sendImageMessage(sender, "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/7267992/image/aad27de18a559742ab296cd14ab0d6af");
+      await sendButtonMessage(sender, "Ejemplo de boton", [{
         type: "web_url",
         url: "https://www.messenger.com",
         title: "Visit Messenger",
