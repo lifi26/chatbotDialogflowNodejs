@@ -152,6 +152,50 @@ async function handleDialogFlowAction(
   parameters
 ) {
   switch (action) {
+    case "Code.menuCarrusel.action":
+      let helados=[
+        {
+          id:1,
+          nombre:"Helado de fresa",
+          img:"https://cocina-casera.com/wp-content/uploads/2018/05/helado-de-fresa-casero.jpg",
+          descripcion:"Los helados de fresa son muy ricos",
+          precio:7,
+        },{
+          id:2,
+          nombre:"Helado de piña",
+          img:"https://okdiario.com/img/2019/07/07/receta-de-helado-casero-de-pina-1.jpg",
+          descripcion:"Los helados de piña son muy ricos",
+          precio:5,
+        },{
+          id:3,
+          nombre:"Helado de chocolate",
+          img:"https://www.comedera.com/wp-content/uploads/2022/04/Helado-de-chocolate-sin-azucar-casero-shutterstock_1418765711.jpg",
+          descripcion:"Los helados de chocolate son muy ricos",
+          precio:10,
+        },
+      ];
+      let tarjetas = [];
+      helados.forEach(helado => {
+        tarjetas.push({
+          title: helado.nombre+" $"+helado.precio,
+          image_url: helado.img,
+          subtitle: helado.descripcion,
+          buttons:[
+            {
+              type: "postback",
+              title: "Hacer compra",
+              payload: "hacer_compra",
+            },{
+              type: "postback",
+              title: "Ver màs helados",
+              payload: "ver_mas_helados",
+            },             
+          ],      
+        });
+      });
+      sendGenericMessage(sender, tarjetas);
+
+      break;
     case "Codigo.quickReply.action":
       let replies = [];
       for (let i = 1; i <= 5; i++) {
