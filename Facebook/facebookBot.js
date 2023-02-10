@@ -12,6 +12,7 @@ const { structProtoToJson } = require("./helpers/structFunctions");
 const ChatbotUser = require("../Models/ChatbotUsers");
 
 
+
 // Messenger API parameters
 if (!config.FB_PAGE_TOKEN) {
   throw new Error("missing FB_PAGE_TOKEN");
@@ -123,13 +124,13 @@ async function receivedMessage(event) {
 }
 
 function saveUserData(facebookId) {
-  let chatbotUsers = new ChatbotUser({
+  let chatbotUser = new ChatbotUser({
     firstName: "",
     lastName: "",
     facebookId,
     profilePic: "",
   });
-  chatbotUsers.save((err, res) => {
+  chatbotUser.save((err, res) => {
     if (err) return console.log(err);
     console.log("se creo un usuario:", res);
   });
