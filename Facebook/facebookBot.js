@@ -123,13 +123,13 @@ async function receivedMessage(event) {
 }
 
 function saveUserData(facebookId) {
-  let chatbotUser = new ChatbotUser({
+  let ChatbotUsers = new ChatbotUser({
     firstName: "",
     lastName: "",
     facebookId,
     profilePic: "",
   });
-  chatbotUser.save((err, res) => {
+  ChatbotUsers.save((err, res) => {
     if (err) return console.log(err);
     console.log("se creo un usuario:", res);
   });
