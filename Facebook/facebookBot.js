@@ -10,6 +10,7 @@ const dialogflow = require("../dialogflow");
 const { structProtoToJson } = require("./helpers/structFunctions");
 //mongodb models
 const ChatbotUser = require("../Models/ChatbotUsers");
+const { findOne } = require("../Models/ChatbotUsers");
 
 
 
@@ -124,6 +125,8 @@ async function receivedMessage(event) {
 }
 
 async function saveUserData(facebookId) {
+  let isRegistered = await findOne({facebookId});
+  if(isRegistered) return;
   let userData = await getUserData(facebookId);
   let chatbotUser = new ChatbotUser({
     firstName: userData.first_name,
