@@ -10,9 +10,7 @@ const dialogflow = require("../dialogflow");
 const { structProtoToJson } = require("./helpers/structFunctions");
 //mongodb models
 const ChatbotUser = require("../Models/ChatbotUsers");
-ChatbotUser.find({}, (err, res) => {
-  console.log(res);
-});
+
 
 // Messenger API parameters
 if (!config.FB_PAGE_TOKEN) {
@@ -125,11 +123,12 @@ async function receivedMessage(event) {
 }
 
 async function saveUserData(facebookId) {
+  let userData = await getUserData(facebookId);
   let chatbotUser = new ChatbotUser({
-    firstName: "",
-    lastName: "",
+    firstName: userData.first_name,
+    lastName: userData.last_name,
     facebookId,
-    profilePic: "",
+    profilePic: userData.profile_pic,
   });
   chatbotUser.save((err, res) => {
     if (err) return console.log(err);
