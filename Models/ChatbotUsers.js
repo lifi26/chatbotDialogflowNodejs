@@ -6,10 +6,7 @@ const ChatbotUserSchema = new Schema(
     {
         firstName: String,
         lastName: String,
-        facebookId: {
-            type: String,
-            unique: true,
-        },
+        facebookId: String,
         profilePic: String,
     },
     { timestamps: true }
