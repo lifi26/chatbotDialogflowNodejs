@@ -26,8 +26,8 @@ mongoose.connect(
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
-  },(err,res)=> {
-    if(err) return console.log("Hubo un error en la base de datos ",err);
+  },(err, res) => {
+    if (err) return console.log("Hubo un error en la base de datos ",err);
     console.log("BASE DE DATOS ONLINE");
   }
 );
