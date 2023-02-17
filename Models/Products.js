@@ -9,7 +9,6 @@ const ProductSchema = new Schema(
         unique: true,
     },
     description: String,
-    price: Number,
     img: String,
   },
   { timestamps: true }
