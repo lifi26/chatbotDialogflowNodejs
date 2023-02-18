@@ -175,7 +175,24 @@ async function handleDialogFlowAction(
     case "Redes.info.action":
       let redName = parameters.fields.redName.stringValue;
       let redInfo = await Product.findOne({ name: redName });
-      console.log("La informacion de redes es:", redInfo);
+      sendGenericMessage(sender, [
+        {
+          title: redInfo.name + " &" + redInfo.description,
+          image_url: redInfo.img,
+          subtitle: redInfo.description,
+          buttons:[
+            {
+              type: "postback",
+              title: "MAC Y PHY",
+              payload: "ISO-IEEE 802-11",
+            },{
+              type: "postback",
+              title: "ISO-ANSI-IEEE 802-11",
+              payload: "ESPECIFICACION MAC Y PHY",
+            },             
+          ],      
+        },
+      ]);
       break;
     case "Code.DemasElementos.action":
       await sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
