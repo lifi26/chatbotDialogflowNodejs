@@ -171,6 +171,9 @@ async function handleDialogFlowAction(
   parameters
 ) {
   switch (action) {
+    case "Redes.info.action":
+      console.log(parameters);
+      break;
     case "Code.DemasElementos.action":
       await sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
       await sendImageMessage(sender, "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/7267992/image/aad27de18a559742ab296cd14ab0d6af");
