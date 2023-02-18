@@ -10,6 +10,7 @@ const dialogflow = require("../dialogflow");
 const { structProtoToJson } = require("./helpers/structFunctions");
 //mongodb models
 const ChatbotUser = require("../Models/ChatbotUsers");
+const Product = require("../Models/Products");
 
 
 // Messenger API parameters
@@ -172,7 +173,9 @@ async function handleDialogFlowAction(
 ) {
   switch (action) {
     case "Redes.info.action":
-      console.log(parameters);
+      let redName = parameters.fields.redName.stringValue;
+      let redInfo = await Product.findOne({ name: redName });
+      console.log("La informacion de redes es:", redInfo);
       break;
     case "Code.DemasElementos.action":
       await sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
