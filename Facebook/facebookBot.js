@@ -200,12 +200,12 @@ async function handleDialogFlowAction(
       ]);
       break;
     case "Code.DemasElementos.action":
-      await sendTextMessage(sender, "Estoy mandando imagen de ISO 802.11 y un boton");
-      await sendImageMessage(sender, "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/7267992/image/aad27de18a559742ab296cd14ab0d6af");
-      await sendButtonMessage(sender, "Ejemplo de boton", [{
+      await sendTextMessage(sender, "La Organización Internacional de Normalización conocida por el acrónimo ISO es una organización para la creación de estándares internacionales compuesta por diversas organizaciones nacionales de normalización");
+      await sendImageMessage(sender, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROKed2N9dTwPOA8cZEII2LBmjHmz1IVeIztZdnI-PHU_xUBa0jm3oB0ADolO7gXbEU0A&usqp=CAU");
+      await sendButtonMessage(sender, "ESTANDAR ISO 802-11", [{
         type: "web_url",
-        url: "https://www.messenger.com",
-        title: "Visit Messenger",
+        url: "https://ieeexplore.ieee.org/document/9363693",
+        title: "Visita ISO 802-11",
       },
     ]);
       break;
