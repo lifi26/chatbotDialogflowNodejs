@@ -177,6 +177,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://blog.telecom.pucp.edu.pe/wp-content/uploads/2016/09/cde-fotochopeado.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta68.action":
+      sendImageMessage(sender, "https://ctnaval.com/wp-content/uploads/2019/07/Post-IEC.jpg");
+      handleMessages(messages, sender);
+      break;
     case "Redes.info.action":
       let redName = parameters.fields.redName.stringValue;
       let redInfo = await Product.findOne({ name: redName });
