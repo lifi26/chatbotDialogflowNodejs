@@ -173,7 +173,7 @@ async function handleDialogFlowAction(
 ) {
   switch (action) {
     case "Ubicacion.action":
-      sendTextMessage(sender, "https://blog.telecom.pucp.edu.pe/wp-content/uploads/2016/09/cde-fotochopeado.jpg");
+      sendTextMessage(sender, "Es el Instituto de Ingenieros Eléctricos y Electrónicos");
       sendImageMessage(sender, "https://blog.telecom.pucp.edu.pe/wp-content/uploads/2016/09/cde-fotochopeado.jpg");
       handleMessages(messages, sender);
       break;
