@@ -249,11 +249,11 @@ async function handleDialogFlowAction(
             {
               type: "postback",
               title: "WLAN-WPA2-WPA3",
-              payload: "ISO/IEC/ANSI/IEEE 802.11",
+              payload: "Especificado MAC Y PHY",
             },{
               type: "postback",
               title: "WLAN-WPA2-WPA3",
-              payload: "ISO/IEC/ANSI/IEEE 802.11",
+              payload: "Especificado MAC Y PHY",
             },             
           ],      
         });
