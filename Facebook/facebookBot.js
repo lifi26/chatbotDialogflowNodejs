@@ -218,42 +218,42 @@ async function handleDialogFlowAction(
     ]);
       break;
     case "Code.menuCarrusel.action":
-      let helados=[
+      let inalambricos=[
         {
           id:1,
-          nombre:"Helado de fresa",
-          img:"https://cocina-casera.com/wp-content/uploads/2018/05/helado-de-fresa-casero.jpg",
-          descripcion:"Los helados de fresa son muy ricos",
-          precio:7,
+          nombre:"WLAN",
+          img:"https://www.redesinalambricas.es/wp-content/uploads/2019/03/wireless-lan.jpg",
+          descripcion:"WLAN es la abreviatura de Wireless Local Area Network y se refiere a una red de computadoras a distancia de unas pocas decenas o cientos de metros, que utiliza señales de radio de alta frecuencia para transmitir y recibir datos",
+          precio:0,
         },{
           id:2,
-          nombre:"Helado de piña",
-          img:"https://okdiario.com/img/2019/07/07/receta-de-helado-casero-de-pina-1.jpg",
-          descripcion:"Los helados de piña son muy ricos",
-          precio:5,
+          nombre:"WPA2",
+          img:"https://t3.ftcdn.net/jpg/00/74/99/52/360_F_74995234_m6HDrhakCAIttyFGAZJFUNNEOxQanVJQ.jpg",
+          descripcion:"El WPA2 es para poder proteger sus datos y todos los dispositivos de su red, es necesario disponer de un protocolo de seguridad adecuado para su router y WPA2 se ha convertido en el estándar por excelencia su diferencia en relación con otros protocolos y la manera de optimizarlo para lograr un mayor cifrado en sus comunicaciones en línea",
+          precio:0,
         },{
           id:3,
-          nombre:"Helado de chocolate",
-          img:"https://www.comedera.com/wp-content/uploads/2022/04/Helado-de-chocolate-sin-azucar-casero-shutterstock_1418765711.jpg",
-          descripcion:"Los helados de chocolate son muy ricos",
-          precio:10,
+          nombre:"WPA3",
+          img:"https://c8.alamy.com/compes/2ct48r6/nuevo-protocolo-de-seguridad-de-red-wpa3-2ct48r6.jpg",
+          descripcion:"La seguridad WPA3 está diseñada para ayudar a prevenir eso. En lugar de confiar en contraseñas compartidas WPA3 registra nuevos dispositivos a través de procesos que no requieren el uso de una contraseña compartida la encriptación WPA3 está orientada a ser mejor que las iteraciones anteriores de la tecnología WiFi En primer lugar, al igual que el paso de los navegadores Google Chrome y Firefox para advertir o bloquear directamente la conexión de los usuarios a servidores web inseguros",
+          precio:0,
         },
       ];
       let tarjetas = [];
-      helados.forEach(helado => {
+      inalambricos.forEach(inalambrico => {
         tarjetas.push({
-          title: helado.nombre+" $"+helado.precio,
-          image_url: helado.img,
-          subtitle: helado.descripcion,
+          title: inalambrico.nombre+" $"+inalambrico.precio,
+          image_url: inalambrico.img,
+          subtitle: inalambrico.descripcion,
           buttons:[
             {
               type: "postback",
-              title: "Hacer compra",
-              payload: "hacer_compra",
+              title: "WLAN-WPA2-WPA3",
+              payload: "Te gustara el tema Estandar ISO/IEC/ANSI/IEEE 802.11",
             },{
               type: "postback",
-              title: "Ver màs helados",
-              payload: "ver_mas_helados",
+              title: "WLAN-WPA2-WPA3",
+              payload: "Aprende de ISO/IEC/ANSI/IEEE 802.11",
             },             
           ],      
         });
