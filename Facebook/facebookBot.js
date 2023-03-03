@@ -249,11 +249,11 @@ async function handleDialogFlowAction(
             {
               type: "postback",
               title: "WLAN-WPA2-WPA3",
-              payload: "Te gustara el tema Estandar ISO/IEC/ANSI/IEEE 802.11",
+              payload: "ISO/IEC/ANSI/IEEE 802.11",
             },{
               type: "postback",
               title: "WLAN-WPA2-WPA3",
-              payload: "Aprende de ISO/IEC/ANSI/IEEE 802.11",
+              payload: "ISO/IEC/ANSI/IEEE 802.11",
             },             
           ],      
         });
