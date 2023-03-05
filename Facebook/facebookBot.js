@@ -217,6 +217,16 @@ async function handleDialogFlowAction(
       },
     ]);
       break;
+    case "Estandar.action":
+      await sendTextMessage(sender, "El estandar 802.11 opera en la banda de frecuencia de 5 GHz y proporciona velocidades de hasta 54 Mb/s posee un área de cobertura menor y es menos efectivo al penetrar estructuras edilicias");
+      await sendImageMessage(sender, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWOiJydU71VVVXtMpzQZE3RHAjfa1wbPU_ESpgj2riBC1yfaOkwNLEiEWtWljjD26lSYI&usqp=CAU");
+      await sendButtonMessage(sender, "ESTANDAR 802-11", [{
+        type: "web_url",
+        url: "https://www.youtube.com/watch?v=h6ZcTwTk_Bo",
+        title: "Visita El VIDEO",
+      },
+    ]);
+      break;
     case "Code.menuCarrusel.action":
       let inalambricos=[
         {
