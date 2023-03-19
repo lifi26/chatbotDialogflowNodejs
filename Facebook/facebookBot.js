@@ -196,12 +196,12 @@ async function handleDialogFlowAction(
           buttons:[
             {
               type: "postback",
-              title: "MAC Y PHY",
-              payload: "ISO-IEEE 802-11",
+              title: "Bae, A. S. Alfa, 2022, p.978",
+              payload: "Y. H. Bae, A. S. Alfa and B. D. Choi, Performance Analysis of Modified IEEE 802.11-Based Cognitive Radio Networks in IEEE Communications Letters, pp. 975-977, October 2022",
             },{
               type: "postback",
-              title: "ISO-ANSI-IEEE 802-11",
-              payload: "ESPECIFICACION MAC Y PHY",
+              title: "Yin, Y. Gao, S. Manzoor, 2022, p.1620",
+              payload: "Y. Yin, Y. Gao, S. Manzoor and X. Hei Optimal RTS Threshold for IEEE 802.11 WLANs: Basic or RTS/CTS 2022 IEEE SmartWorld, Ubiquitous Intelligence & Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Leicester, UK, 2022, pp. 1620-1625",
             },             
           ],      
         },
