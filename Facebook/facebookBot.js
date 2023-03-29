@@ -258,11 +258,11 @@ async function handleDialogFlowAction(
           buttons:[
             {
               type: "postback",
-              title: "WLAN-WPA2-WPA3",
+              title: "Bae, A. S. Alfa, 2022, p.978",
               payload: "Especificado MAC Y PHY",
             },{
               type: "postback",
-              title: "WLAN-WPA2-WPA3",
+              title: "Yin, Y. Gao, S. Manzoor, 2022, p.1620",
               payload: "Especificado MAC Y PHY",
             },             
           ],      
