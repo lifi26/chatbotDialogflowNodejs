@@ -276,7 +276,7 @@ async function handleDialogFlowAction(
       for (let i = 1; i <= 5; i++) {
         replies.push({
           payload: "si_acepto",
-          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/1024px-Yes_Check_Circle.svg.png",
+          image_url: "https://w7.pngwing.com/pngs/989/701/png-transparent-wi-fi-tonge-barn-hotspot-ieee-802-11-free-wifi.png",
           content_type: "text",
           title: i,
         });        
