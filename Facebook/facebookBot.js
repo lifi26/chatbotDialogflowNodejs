@@ -185,6 +185,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta115.action":
+      sendImageMessage(sender, "https://i0.wp.com/semiengineering.com/wp-content/uploads/2015/10/802.11.png?resize=630%2C481");
+      handleMessages(messages, sender);
+      break;
     case "Redes.info.action":
       let redName = parameters.fields.redName.stringValue;
       let redInfo = await Product.findOne({ name: redName });
