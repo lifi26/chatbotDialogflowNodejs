@@ -185,6 +185,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta113.action":
+      sendImageMessage(sender, "https://www.academiatesto.com.ar/cms/sites/default/files/333_62.jpg");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta114.action":
       sendImageMessage(sender, "https://www.profesionalreview.com/wp-content/uploads/2017/11/como-funciona-wifi.jpg");
       handleMessages(messages, sender);
