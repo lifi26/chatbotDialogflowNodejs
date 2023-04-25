@@ -185,6 +185,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta105.action":
+      sendImageMessage(sender, "https://www.researchgate.net/profile/P-Duhamel/publication/4373030/figure/fig5/AS:668667813568513@1536434238140/Format-of-the-80211-DSSS-PHY-packet-At-PHY-layer-the-80211-standard-provides-1-or-2.png");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta103.action":
       sendImageMessage(sender, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SSID_ESS.svg/1200px-SSID_ESS.svg.png");
       handleMessages(messages, sender);
