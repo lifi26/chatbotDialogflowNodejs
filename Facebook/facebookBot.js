@@ -187,6 +187,7 @@ async function handleDialogFlowAction(
       break;
     case "Respuesta115.action":
       sendImageMessage(sender, "https://i0.wp.com/semiengineering.com/wp-content/uploads/2015/10/802.11.png?resize=630%2C481");
+      sendTextMessage(sender, "Jinyu Zhang, Taiyang Hu, IEEE Transactions on Computational Imaging, 2022, p.383");
       handleMessages(messages, sender);
       break;
     case "Redes.info.action":
