@@ -185,6 +185,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta103.action":
+      sendImageMessage(sender, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SSID_ESS.svg/1200px-SSID_ESS.svg.png");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta115.action":
       sendTextMessage(sender, "Jinyu Zhang, Taiyang Hu, IEEE Transactions on Computational Imaging, 2022, p.383");
       sendImageMessage(sender, "https://i0.wp.com/semiengineering.com/wp-content/uploads/2015/10/802.11.png?resize=630%2C481");
