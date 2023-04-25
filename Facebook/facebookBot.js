@@ -239,7 +239,7 @@ async function handleDialogFlowAction(
     ]);
       break;
     case "Estandar.action":
-      await sendTextMessage(sender, "El estandar 802.11 opera en la banda de frecuencia de 5 GHz y proporciona velocidades de hasta 54 Mb/s posee un área de cobertura menor y es menos efectivo al penetrar estructuras edilicias");
+      await sendTextMessage(sender, "El estandar 802.11 opera en la banda de frecuencia de 5 GHz y proporciona velocidades de hasta 54 Mb/s posee un área de cobertura menor y es menos efectivo al penetrar estructuras edilicias.A. M. Shabalin IEEE Standard for Information Technology, 2022, P.03. Con URL: https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2010/315381");
       await sendImageMessage(sender, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWOiJydU71VVVXtMpzQZE3RHAjfa1wbPU_ESpgj2riBC1yfaOkwNLEiEWtWljjD26lSYI&usqp=CAU");
       await sendButtonMessage(sender, "ESTANDAR 802-11", [{
         type: "web_url",
