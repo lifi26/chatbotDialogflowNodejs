@@ -185,6 +185,10 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta114.action":
+      sendImageMessage(sender, "https://www.profesionalreview.com/wp-content/uploads/2017/11/como-funciona-wifi.jpg");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta105.action":
       sendImageMessage(sender, "https://www.researchgate.net/profile/P-Duhamel/publication/4373030/figure/fig5/AS:668667813568513@1536434238140/Format-of-the-80211-DSSS-PHY-packet-At-PHY-layer-the-80211-standard-provides-1-or-2.png");
       handleMessages(messages, sender);
