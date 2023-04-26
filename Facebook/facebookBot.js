@@ -201,11 +201,6 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SSID_ESS.svg/1200px-SSID_ESS.svg.png");
       handleMessages(messages, sender);
       break;
-    case "Respuesta115.action":
-      sendTextMessage(sender, "Jinyu Zhang, Taiyang Hu, IEEE Transactions on Computational Imaging, 2022, p.383");
-      sendImageMessage(sender, "https://i0.wp.com/semiengineering.com/wp-content/uploads/2015/10/802.11.png?resize=630%2C481");
-      handleMessages(messages, sender);
-      break;
     case "Redes.info.action":
       let redName = parameters.fields.redName.stringValue;
       let redInfo = await Product.findOne({ name: redName });
