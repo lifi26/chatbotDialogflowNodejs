@@ -191,7 +191,7 @@ async function handleDialogFlowAction(
       handleMessages(messages, sender);
       break;
     case "Respuesta83.action":
-      sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png, IEEE Standard for Information Technology, 2021, P.307");
+      sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png","IEEE Standard for Information Technology, 2021, P.307");
       handleMessages(messages, sender);
       break;
     case "Respuesta113.action":
