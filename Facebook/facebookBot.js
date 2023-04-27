@@ -185,6 +185,11 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://telesaludblog.files.wordpress.com/2016/04/ansi.jpg");
       handleMessages(messages, sender);
       break;
+    case "Respuesta34.action":
+      sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png");
+      sendTextMessage(sender, "IEEE Standard for Information Technology, 2021, P.307");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta113.action":
       sendImageMessage(sender, "https://www.academiatesto.com.ar/cms/sites/default/files/333_62.jpg");
       handleMessages(messages, sender);
