@@ -202,6 +202,22 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png");
       handleMessages(messages, sender);
       break;
+    case "Respuesta85.action":
+      sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png");
+      handleMessages(messages, sender);
+      break;
+    case "Respuesta36.action":
+      sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png");
+      handleMessages(messages, sender);
+      break;
+    case "Respuesta101.action":
+      sendImageMessage(sender, "https://mrncciew.files.wordpress.com/2014/10/cwap-ppdu-01.png");
+      handleMessages(messages, sender);
+      break;
+    case "Respuesta16.action":
+      sendImageMessage(sender, "https://mrncciew.files.wordpress.com/2014/10/cwap-ppdu-01.png");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta113.action":
       sendImageMessage(sender, "https://www.academiatesto.com.ar/cms/sites/default/files/333_62.jpg");
       handleMessages(messages, sender);
