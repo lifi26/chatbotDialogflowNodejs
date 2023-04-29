@@ -210,6 +210,14 @@ async function handleDialogFlowAction(
       sendImageMessage(sender, "https://www.monografias.com/docs113/introduccion-redes-inalambricas-ppt/Diapositiva16.png");
       handleMessages(messages, sender);
       break;
+    case "Respuesta54.action":
+      sendImageMessage(sender, "https://www.researchgate.net/profile/Ayman-Wazwaz/publication/255651852/figure/fig7/AS:347236123856903@1459798951622/5-Using-SIFS-and-DIFS-example-3.png");
+      handleMessages(messages, sender);
+      break;
+    case "Respuesta92.action":
+      sendImageMessage(sender, "https://www.researchgate.net/profile/Ayman-Wazwaz/publication/255651852/figure/fig7/AS:347236123856903@1459798951622/5-Using-SIFS-and-DIFS-example-3.png");
+      handleMessages(messages, sender);
+      break;
     case "Respuesta101.action":
       sendImageMessage(sender, "https://mrncciew.files.wordpress.com/2014/10/cwap-ppdu-01.png");
       handleMessages(messages, sender);
