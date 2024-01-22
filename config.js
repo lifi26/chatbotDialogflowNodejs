@@ -1,8 +1,8 @@
 module.exports = {
   //Facebook App credentials
-  FB_PAGE_TOKEN: "EAATZCjmfh9kUBADDwXQC1SpgO1cFuthVBKvkl8rqSR2cGljZAZBZCSZBuLaepweN6kVAcAqGTZBVUFGpnroDCRSO0rdRTunBdcvkEuiX4SCzLexghqzRLeh0MZBX5qlsOC9vDZA8NtNmBDYszQpLFIHbDYZCUuZAqygsVm2evP0GnTSKZAJwCfCdWZAC",
+  FB_PAGE_TOKEN: "EAAKdImbBevUBO0LahZBBtq4dHwXZC09w01eu0u7ZBnePc1QVJ06ZCqpe1ChiSvoF906dbqgIcZBmJJp7YMnULKA3jU6rrSgdnR5uGgy7ctm2Jr6O5JKCSgQmYh6xCHwxlR28TligmbzkNoqK2rSVmWbtbFx4CsO8OF2FPH4ZCSjttx1tzWwTeBIWVzZB1cdr9ST",
   FB_VERIFY_TOKEN: "vendedorBotToken",
-  FB_APP_SECRET: "57cc10ced8547477c7c2a77895f3f884",
+  FB_APP_SECRET: "9e3869a7d6d26616df5418e69c56127c",
   //Google project credentials
   GOOGLE_PROJECT_ID: "vendedorbot-t9oa",
   DF_LANGUAGE_CODE: "es",
